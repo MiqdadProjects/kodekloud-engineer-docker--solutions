@@ -14,7 +14,7 @@ c. Do not change the base image, any other valid configuration within the Docker
 👉 **Your task**: Fix the Dockerfile to ensure a successful image build while maintaining all valid configurations.
 
 
-**Note**: There may be potential issues in your Dockerfile. I have resolved the problem I encountered and uploaded the fix.
+**Note**: There might be some other potential issues in your Dockerfile.I encountered these during setup, resolved it, and uploaded the fix so others can benefit if they face the same problem.
 
 
 ---
