@@ -1,13 +1,13 @@
-**🌟 KodeKloud Docker Engineer Solutions**
+# **🌟 KodeKloud Docker Engineer Solutions**
 
 <div align="center">
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![KodeKloud](https://img.shields.io/badge/Platform-KodeKloud-orange?style=for-the-badge&logo=kubernetes)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
-![Tasks Progress](https://img.shields.io/badge/Progress-15%2F15-green?style=for-the-badge)
+![Tasks Progress](https://img.shields.io/badge/Progress-16%2F20-green?style=for-the-badge)
 
-*Mastering Docker from Basics to Advanced Orchestration*
+*Mastering Docker from Basics to Advanced Enterprise Orchestration*
 
 </div>
 
@@ -15,17 +15,17 @@
 
 ## 📌 About This Repository
 
-This repository provides **comprehensive solutions** for the 15 Docker tasks across three levels of the **KodeKloud Engineer Docker** challenge, with **Level 4 coming soon** for advanced enterprise scenarios. The tasks documented here reflect the specific challenges I encountered during the challenge, including detailed solutions and verification steps. **Note**: While the core objectives and challenges remain consistent, the specific values (e.g., server names, file paths, or other parameters) in these tasks may differ from those you encounter in your own environment. However, the underlying concepts and problem-solving approaches remain applicable, enabling you to adapt the solutions to your specific context. Each solution is designed for DevOps engineers, combining best practices, detailed documentation, and real-world expertise to accelerate mastery of Docker containerization.
+This repository provides **comprehensive solutions** for the 20 Docker tasks across four levels of the **KodeKloud Engineer Docker** challenge. The tasks documented here reflect the specific challenges I encountered during the challenge, including detailed solutions and verification steps for foundational, intermediate, advanced, and enterprise-level Docker scenarios. **Note**: While the core objectives and challenges remain consistent, specific values (e.g., server names, file paths, or ports) in these tasks may differ in your environment. However, the underlying concepts and problem-solving approaches are universally applicable, enabling you to adapt the solutions to your context. Each solution is crafted for DevOps engineers, combining best practices, detailed documentation, and real-world expertise to accelerate mastery of Docker containerization.
 
 **🎯 Mission**: Empower DevOps professionals to master Docker through practical, production-ready solutions for container management, networking, and orchestration.
 
-**⏱️ Timeline**: This project covers 15 tasks across three levels, with Level 4 planned for advanced enterprise scenarios.
+**⏱️ Timeline**: This project covers 20 tasks across four levels, with Level 4 focusing on advanced enterprise scenarios.
 
 ---
 
 ## 📋 Task Structure
 
-### 🟢 **Level 1: Foundation Tasks**
+### 🟢 **Level 1: Foundation Tasks** (Completed: 5/5)
 | Task | Focus Area | Skills Covered |
 |------|------------|----------------|
 | Task 1 | Docker Installation | Repository setup, service management, version verification |
@@ -34,7 +34,7 @@ This repository provides **comprehensive solutions** for the 15 Docker tasks acr
 | Task 4 | File Operations | Host-container file transfer, data integrity |
 | Task 5 | Service Recovery | Troubleshooting, volume mounting, port mapping |
 
-### 🟡 **Level 2: Intermediate Operations**
+### 🟡 **Level 2: Intermediate Operations** (Completed: 5/5)
 | Task | Focus Area | Skills Covered |
 |------|------------|----------------|
 | Task 1 | Image Management | Image tagging, repository organization |
@@ -43,7 +43,7 @@ This repository provides **comprehensive solutions** for the 15 Docker tasks acr
 | Task 4 | Service Configuration | In-container setup, port customization |
 | Task 5 | Custom Builds | Dockerfile creation, automated builds |
 
-### 🔴 **Level 3: Advanced Orchestration**
+### 🔴 **Level 3: Advanced Orchestration** (Completed: 5/5)
 | Task | Focus Area | Skills Covered |
 |------|------------|----------------|
 | Task 1 | Network Architecture | Macvlan networks, subnet configuration |
@@ -51,6 +51,15 @@ This repository provides **comprehensive solutions** for the 15 Docker tasks acr
 | Task 3 | Port Management | Service accessibility, external connections |
 | Task 4 | Image Distribution | Cross-server deployment, archive methods |
 | Task 5 | Service Orchestration | Docker Compose, multi-container apps |
+
+### 🔵 **Level 4: Enterprise Scenarios** (Completed: 1/5)
+| Task | Focus Area | Skills Covered |
+|------|------------|----------------|
+| Task 1 | Dockerfile Debugging | Dockerfile troubleshooting, file path management |
+| Task 2 | Docker Compose Debugging | Compose file correction, service dependencies |
+| Task 3 | Multi-Container Stack | Docker Compose deployment, web and DB services |
+| Task 4 |  *TBD* | *Coming soon* |
+| Task 5 | *TBD* | *Coming soon* |
 
 ---
 
@@ -92,13 +101,13 @@ git clone https://github.com/MiqdadProjects/kodekloud-engineer-docker--solutions
 cd kodekloud-engineer-docker--solutions
 
 # 2️⃣ Verify Docker Installation
-docker --version && docker-compose --version
+docker --version && docker compose --version
 
 # 3️⃣ Navigate to Desired Level
-cd level-1
-cat Docker-Level-1-Solutions.md
+cd level-4
+cat Docker-Level-4-Solutions.md
 
-# 4️⃣ Execute a Task (Example: Level 1, Task 1)
+# 4️⃣ Execute a Task (Example: Level 4, Task 1)
 cd individual-tasks/task-01
 # Follow task-specific commands
 ```
@@ -151,15 +160,17 @@ Each task follows a structured learning framework:
 - **Docker Engine**: Container runtime and management
 - **Docker Compose**: Multi-container orchestration
 - **CentOS/RHEL/Ubuntu**: Primary operating system environment
-- **Nginx/Apache**: Web server containerization
+- **Nginx/Apache/PHP**: Web server containerization
+- **MariaDB**: Database containerization
 - **Linux Networking**: Container networking and port management
 
 ### Tools & Commands
 - **Container Management**: `docker run`, `docker ps`, `docker exec`
-- **Image Operations**: `docker pull`, `docker build`, `docker commit`
+- **Image Operations**: `docker pull`, `docker build`, `docker save`, `docker load`
 - **Network Configuration**: `docker network create`, macvlan drivers
 - **Volume Management**: `docker cp`, bind mounts, volume mapping
-- **Service Orchestration**: `docker-compose up`, service scaling
+- **Service Orchestration**: `docker compose up`, service scaling
+- **File Transfer**: `scp` for secure image archive transfer
 
 ---
 
@@ -186,15 +197,22 @@ Each task follows a structured learning framework:
 - Transfer images across different servers
 - Orchestrate multi-container applications with Docker Compose
 
+### **Level 4 Outcomes**
+- Debug and fix Dockerfile configuration errors
+- Troubleshoot and correct Docker Compose misconfigurations
+- Deploy complex multi-container stacks with web and database services
+- Master image portability through archiving and secure transfer
+- Prepare for enterprise-grade container orchestration scenarios
+
 ---
 
 ## 💡 Additional Tips
 
 - **Task Variability**: Specific values (e.g., server names, ports) in solutions may differ from your environment, but the logic and approach are universally applicable.
-- **Security Focus**: Solutions incorporate non-root execution and access control best practices.
+- **Security Focus**: Solutions incorporate non-root execution, secure file transfers, and access control best practices.
 - **Resource Efficiency**: Commands are optimized to minimize resource usage.
 - **Scalability**: Configurations support scaling for production environments.
-- **Future-Ready**: Level 4 will introduce advanced enterprise scenarios like Kubernetes integration.
+- **Future-Ready**: Level 4 introduces advanced enterprise scenarios, preparing for Kubernetes integration.
 
 ---
 
@@ -232,41 +250,21 @@ sudo netstat -tuln | grep :80
 sudo kill <pid>
 ```
 
----
+### **Issue 5: Dockerfile Build Failure**
+**Symptoms**: `docker build` fails due to file path errors.
+**Solution**: Verify file paths in `COPY` commands relative to the build context.
+```bash
+ls -la /opt/docker
+cat Dockerfile
+```
 
-## 🚨 Task-Specific Challenge & Solution
-
-**🔍 Main Challenge Encountered:**
-
-The primary challenge was **ensuring solutions are adaptable to varying environment parameters** (e.g., server names, file paths, or port numbers) while maintaining consistency in the core Docker challenges and providing production-ready configurations.
-
-**💡 Solution Approach:**
-
-1. **Task Documentation**: Documented each task with specific values I encountered, clearly noting their potential variability.
-2. **Flexible Commands**: Designed commands to be reusable across different environments.
-3. **Comprehensive Verification**: Included validation steps to confirm container, network, and volume functionality.
-4. **Best Practices**: Applied industry-standard practices like non-root execution and resource optimization.
-5. **Troubleshooting Guides**: Provided solutions for common issues like permission errors or port conflicts.
-
-**🎯 Key Success Factors:**
-- **Clarity in variability**: Clearly communicated that task values may differ while maintaining core challenge consistency.
-- **Production readiness**: Ensured solutions are secure, scalable, and efficient.
-- **Detailed documentation**: Provided step-by-step guides and troubleshooting for easy adaptation.
-- **Verification procedures**: Included commands to validate each task’s success.
-- **Community focus**: Encouraged adaptation of solutions to unique environments.
-
-**⚠️ Critical Configuration Details:**
-- **Task parameters**: Values like server names, ports, or paths may vary by user or environment.
-- **Docker version**: Requires >= 20.10 for compatibility.
-- **System environment**: Solutions assume CentOS/Ubuntu/RHEL with sudo access.
-- **Network configuration**: Assumes internet connectivity for image pulls.
-- **File paths**: Specific paths (e.g., volume mounts) may differ.
-
-**🔒 Container Management Benefits:**
-- **Reusability**: Commands and configurations adaptable to various environments.
-- **Scalability**: Solutions designed for production-scale deployments.
-- **Security**: Incorporates non-root execution and access control.
-- **Learning**: Enhances understanding through detailed explanations and resources.
+### **Issue 6: Compose File Errors**
+**Symptoms**: `docker compose up` fails due to syntax or dependency issues.
+**Solution**: Validate the YAML file and correct service references.
+```bash
+docker compose config
+vi docker-compose.yml
+```
 
 ---
 
@@ -274,11 +272,13 @@ The primary challenge was **ensuring solutions are adaptable to varying environm
 
 🔧 **Container Deployment**: Solutions deploy production-ready Docker containers and services.
 
-🔐 **Security Compliance**: Configurations follow non-root execution and least privilege principles.
+🔐 **Security Compliance**: Configurations follow non-root execution, secure file transfers (e.g., `scp`), and least privilege principles.
 
 📊 **Resource Management**: Commands optimized for efficient CPU, memory, and storage usage.
 
 🛡️ **Scalability**: Configurations support multi-container orchestration and scaling.
+
+🚀 **Enterprise Readiness**: Level 4 solutions address complex debugging, multi-container stacks, and image portability for enterprise environments.
 
 ---
 
@@ -326,6 +326,7 @@ git push origin feature/improvement
 - 📖 [Docker Official Documentation](https://docs.docker.com/)
 - 📝 [Docker Compose Reference](https://docs.docker.com/compose/)
 - 🎓 [KodeKloud Docker Course](https://kodekloud.com/courses/docker-for-the-absolute-beginner/)
+- 🛠️ [Docker Security Best Practices](https://docs.docker.com/engine/security/)
 
 ---
 
