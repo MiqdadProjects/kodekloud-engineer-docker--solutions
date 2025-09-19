@@ -13,6 +13,10 @@ c. Do not change the container names or update/alter any other valid configurati
 
 👉 **Your task**: Fix the docker-compose file to ensure a successful deployment.
 
+**Note**: There might be some other potential issues in your Docker compose file . I encountered these during setup, resolved it, and uploaded the fix so others can benefit if they face the same problem.
+
+
+
 ---
 
 ## 🔹 Step 1: Connect to App Server 2
@@ -60,7 +64,7 @@ services:
         container_name: redis
 ```
 
-**Purpose**: Review the compose file to identify misconfigurations.
+**Purpose**: Review the compose file to identify misconfigurations.Remember to note that their could be any other issues with your docker compose file .
 
 ---
 
