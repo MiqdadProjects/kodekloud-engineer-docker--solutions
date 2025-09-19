@@ -13,6 +13,10 @@ c. Do not change the base image, any other valid configuration within the Docker
 
 👉 **Your task**: Fix the Dockerfile to ensure a successful image build while maintaining all valid configurations.
 
+
+**Note**: There may be potential issues in your Dockerfile. I have resolved the problem I encountered and uploaded the fix.
+
+
 ---
 
 ## 🔹 Step 1: Connect to App Server 1
