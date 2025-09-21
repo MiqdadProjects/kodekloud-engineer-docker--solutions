@@ -4,8 +4,8 @@
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![KodeKloud](https://img.shields.io/badge/Platform-KodeKloud-orange?style=for-the-badge&logo=kubernetes)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
-![Tasks Progress](https://img.shields.io/badge/Progress-16%2F20-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
+![Tasks Progress](https://img.shields.io/badge/Progress-20%2F20-green?style=for-the-badge)
 
 *Mastering Docker from Basics to Advanced Enterprise Orchestration*
 
@@ -52,14 +52,14 @@ This repository provides **comprehensive solutions** for the 20 Docker tasks acr
 | Task 4 | Image Distribution | Cross-server deployment, archive methods |
 | Task 5 | Service Orchestration | Docker Compose, multi-container apps |
 
-### 🔵 **Level 4: Enterprise Scenarios** (Completed: 1/5)
+### 🔵 **Level 4: Enterprise Scenarios** (Completed: 3/5)
 | Task | Focus Area | Skills Covered |
 |------|------------|----------------|
 | Task 1 | Dockerfile Debugging | Dockerfile troubleshooting, file path management |
 | Task 2 | Docker Compose Debugging | Compose file correction, service dependencies |
 | Task 3 | Multi-Container Stack | Docker Compose deployment, web and DB services |
-| Task 4 |  *TBD* | *Coming soon* |
-| Task 5 | *TBD* | *Coming soon* |
+| Task 4 | Node.js App Dockerization | Dockerfile creation, Node.js app deployment, port mapping |
+| Task 5 | Python App Dockerization | Dockerfile creation, Python app deployment, dependency management |
 
 ---
 
@@ -107,8 +107,8 @@ docker --version && docker compose --version
 cd level-4
 cat Docker-Level-4-Solutions.md
 
-# 4️⃣ Execute a Task (Example: Level 4, Task 1)
-cd individual-tasks/task-01
+# 4️⃣ Execute a Task (Example: Level 4, Task 4)
+cd individual-tasks/task-04
 # Follow task-specific commands
 ```
 
@@ -162,6 +162,8 @@ Each task follows a structured learning framework:
 - **CentOS/RHEL/Ubuntu**: Primary operating system environment
 - **Nginx/Apache/PHP**: Web server containerization
 - **MariaDB**: Database containerization
+- **Node.js**: Application containerization
+- **Python**: Application containerization
 - **Linux Networking**: Container networking and port management
 
 ### Tools & Commands
@@ -201,8 +203,8 @@ Each task follows a structured learning framework:
 - Debug and fix Dockerfile configuration errors
 - Troubleshoot and correct Docker Compose misconfigurations
 - Deploy complex multi-container stacks with web and database services
-- Master image portability through archiving and secure transfer
-- Prepare for enterprise-grade container orchestration scenarios
+- Dockerize and deploy Node.js applications with custom port mappings
+- Dockerize and deploy Python applications with dependency management
 
 ---
 
@@ -212,7 +214,7 @@ Each task follows a structured learning framework:
 - **Security Focus**: Solutions incorporate non-root execution, secure file transfers, and access control best practices.
 - **Resource Efficiency**: Commands are optimized to minimize resource usage.
 - **Scalability**: Configurations support scaling for production environments.
-- **Future-Ready**: Level 4 introduces advanced enterprise scenarios, preparing for Kubernetes integration.
+- **Future-Ready**: Level 4 solutions prepare for advanced enterprise scenarios, including Kubernetes integration.
 
 ---
 
@@ -278,7 +280,7 @@ vi docker-compose.yml
 
 🛡️ **Scalability**: Configurations support multi-container orchestration and scaling.
 
-🚀 **Enterprise Readiness**: Level 4 solutions address complex debugging, multi-container stacks, and image portability for enterprise environments.
+🚀 **Enterprise Readiness**: Level 4 solutions address complex debugging, multi-container stacks, and application-specific Dockerization (Node.js, Python) for enterprise environments.
 
 ---
 
